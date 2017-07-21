@@ -2,15 +2,18 @@
   "games":[
     {
       "name":"Call of Duty: BLack Ops 3",
-      "image": "https://s-media-cache-ak0.pinimg.com/originals/7c/34/b7/7c34b7dde8bc29c3bd86fb66558d728e.jpg"
+      "image": "https://s-media-cache-ak0.pinimg.com/originals/7c/34/b7/7c34b7dde8bc29c3bd86fb66558d728e.jpg",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
       "name": "Assassins Creed",
-      "image": "http://wallpapercave.com/wp/U79ncgH.jpg"
+      "image": "http://wallpapercave.com/wp/U79ncgH.jpg",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     },
     {
       "name": "Need for Speed",
-      "image": "https://s-media-cache-ak0.pinimg.com/originals/6b/13/20/6b13202c1de72c7d59cf7b0be0e9b147.jpg"
+      "image": "https://s-media-cache-ak0.pinimg.com/originals/6b/13/20/6b13202c1de72c7d59cf7b0be0e9b147.jpg",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
     }
   ],
   "ratings":[

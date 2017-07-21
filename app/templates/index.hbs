@@ -1,1 +1,5 @@
-{{outlet}}
+{{#each model as |game|}}
+  {{review-tile game=game }}
+{{/each}}
+
+{{new-game saveComment="saveComment"}}
