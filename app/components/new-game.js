@@ -1,14 +1,19 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
+  addNewGame : false,
   actions:{
-    saveComment(){
+    showGameForm(){
+      this.set("addNewGame", true)
+    },
+    saveGame(){
       var params ={
         name: this.get("name"),
         description: this.get("description"),
         image : this.get("image")
       };
-      this.sendAction("saveComment", params);
+      this.set("addNewGame", false)
+      this.sendAction("saveGame", params);
     }
   }
 });

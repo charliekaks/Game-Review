@@ -1,34 +1,21 @@
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
-
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        <form>
-          <div class="form-group">
-            <label for="name"></label>
-            {{input value=name id="name"}}
-          </div>
-          <div class="form-group">
-            <label for="description"></label>
-          {{textarea name="name" rows="5" cols="80" value=description id="description"}}
-          </div>
-          <div class="form-group">
-            <label for="image"></label>
-            {{input value=image id="image"}}
-          </div>
-        </form>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
+{{#if addNewGame}}
+<form>
+  <div class="form-group">
+    <label for="name">Name</label>
+    {{input value=name id="name" placeholder="Game name" class="form-control"}}
   </div>
-</div>
+  <div class="form-group">
+    <label for="description">description</label>
+  {{textarea name="name" rows="5" cols="80" value=description id="description"  placeholder="Game description" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="image">Image</label>
+    {{input value=image id="image"  placeholder="image URL" class="form-control"}}
+  </div>
+  <button type="button" class="btn btn-default" {{action "saveGame"}}> Add Game</button>
+</form>
+{{else}}
+<button type="button" class="btn btn-default" {{action "showGameForm"}}>
+  Add Game
+</button>
+{{/if}}
