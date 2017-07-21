@@ -17,6 +17,14 @@ module.exports = function(environment) {
         Date: false
       }
     },
+    firebase : {
+    apiKey: "AIzaSyDZQq4kkmhru5FLTZT8Ksn9BdRTpA8KEFM",
+    authDomain: "review-site-ecb80.firebaseapp.com",
+    databaseURL: "https://review-site-ecb80.firebaseio.com",
+    projectId: "review-site-ecb80",
+    storageBucket: "review-site-ecb80.appspot.com",
+    messagingSenderId: "206000413904"
+  },
 
     APP: {
       // Here you can pass flags/options to your application instance
