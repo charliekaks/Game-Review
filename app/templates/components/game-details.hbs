@@ -1,5 +1,5 @@
 {{game-tile game=game}}
 <h2>Ratings for the Game</h2>
-{{#each game.rating as |rating|}}
-  {{rating-tile rating=rating}}
+{{#each sortedReviews as |rating|}}
+  {{rating-tile rating=rating}} 
 {{/each}}

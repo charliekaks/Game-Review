@@ -1,3 +1,9 @@
 body{
   font-family: 'EB Garamond', serif;
+  background-image: url("http://eskipaper.com/images/game-wallpapers-hd-9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button{
+  position: fixed; bottom: 200px; right: 80px;
 }
