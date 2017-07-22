@@ -19,15 +19,18 @@
   "ratings":[
     {
       "comment": "the graphics on the game where extraordinary",
-      "reviewer": "frank"
+      "reviewer": "frank",
+      "star": "5"
     },
     {
       "comment": "the game play was fantastic with a very good story line",
-      "reviewer": "joey"
+      "reviewer": "joey",
+      "star": "3"
     },
     {
       "comment": "the game was is crossplatform giving it a wider audience",
-      "reviewer": "lopez"
+      "reviewer": "lopez",
+      "star": "4"
     }
   ]
 }

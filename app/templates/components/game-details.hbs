@@ -1,9 +1,9 @@
 {{review-tile game=game}}
-
+{{new-review }}
 <div class="col-md-10 col-md-offset-1">
   <h4>Reviews</h4>
   {{#each model.rating as |rating|}}
-  {{rating.comment}}
-  {{rating.reviewer}}
+    {{rating.comment}}
+    {{rating.reviewer}}
   {{/each}}
 </div>
