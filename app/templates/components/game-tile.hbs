@@ -1,0 +1,16 @@
+<!--HTML that holds the content of the game being rated  -->
+<div class="container">
+  <div class="col-md-8 col-md-offset-2">
+    <div class="row well">
+      <div class="col-md-6">
+        Game Title:{{game.name}}
+        <img src="{{game.image}}" alt="" class="img-responsive">
+      </div>
+      <div class="col-md-6">
+        <br><br><br>
+        {{game.description}}
+        {{#link-to "game" game.id}}Go to Reviews{{/link-to}}
+      </div>
+    </div>
+  </div>
+</div>

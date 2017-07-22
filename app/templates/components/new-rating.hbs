@@ -1,0 +1,21 @@
+{{#if addNewReview}}
+<form>
+  <div class="form-group">
+    <label for="comment">Comment</label>
+    {{textarea name="name" rows="8" cols="80" value=comment id="comment" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="star">Star Rating</label>
+    {{input type="number" class="form-control"  placeholder="Rate 1-5" value=star id ="star" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="reviewer">Reviewer</label>
+    {{input type="text" class="form-control"  placeholder="your name" value=reviewer id ="reviewer" class="form-control"}}
+  </div>
+  <button type="button" class="btn btn-default" {{action "saveRating"}}></button>
+</form>
+{{else}}
+<button type="button" class="btn btn-default" {{action "showReviewForm"}}>
+  Review Game
+</button>
+{{/if}}

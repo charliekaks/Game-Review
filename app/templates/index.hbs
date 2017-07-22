@@ -1,5 +1,13 @@
-{{#each model as |game|}}
-  {{review-tile game=game }}
+{{#each model.games as |game|}}
+  {{game-tile game=game }}
 {{/each}}
+
+{{#each model.ratings as |rating|}}
+  <!-- {{rating.comment}}<br> -->
+  {{rating.star}}<br>
+  <!-- {{rating.reviewer}} -->
+{{/each}}
+
+
 
 {{new-game saveGame="saveGame"}}
