@@ -12,7 +12,7 @@
     <label for="reviewer">Reviewer</label>
     {{input type="text" class="form-control"  placeholder="your name" value=reviewer id ="reviewer" class="form-control"}}
   </div>
-  <button type="button" class="btn btn-default" {{action "saveRating"}}></button>
+  <button type="button" class="btn btn-default" {{action "saveRating"}}>Add Rating</button>
 </form>
 {{else}}
 <button type="button" class="btn btn-default" {{action "showReviewForm"}}>
