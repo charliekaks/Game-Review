@@ -1,21 +1,26 @@
-{{#if addNewGame}}
-<form>
-  <div class="form-group">
-    <label for="name">Name</label>
-    {{input value=name id="name" placeholder="Game name" class="form-control"}}
-  </div>
-  <div class="form-group">
-    <label for="description">description</label>
-  {{textarea name="name" rows="5" cols="80" value=description id="description"  placeholder="Game description" class="form-control"}}
-  </div>
-  <div class="form-group">
-    <label for="image">Image</label>
-    {{input value=image id="image"  placeholder="image URL" class="form-control"}}
-  </div>
-  <button type="button" class="btn btn-default" {{action "saveGame"}}> Add Game</button>
-</form>
-{{else}}
-<button type="button" class="btn btn-default" {{action "showGameForm"}}>
-  Add Game
-</button>
-{{/if}}
+
+{{#bs-modal open=modal3 onHidden=(action (mut modal3) false) as |modal|}}
+  {{#modal.header}}
+    <h4 class="modal-title">
+      Add A New Game
+    </h4>
+  {{/modal.header}}
+  {{#modal.body}}
+  <form>
+    <div class="form-group">
+      {{input value=name id="name" placeholder="Game name" class="form-control frm"}}
+    </div>
+    <div class="form-group">
+    {{textarea name="name" rows="5" cols="80" value=description id="description"  placeholder="Game description" class="form-control frm"}}
+    </div>
+    <div class="form-group">
+      {{input value=image id="image"  placeholder="image URL" class="form-control frm"}}
+    </div>
+  </form>
+  {{/modal.body}}
+  {{#modal.footer}}
+    {{#bs-button type="success" onClick=(action "saveGame")}}Save{{/bs-button}}
+    {{#bs-button onClick=(action modal.close)}}Close{{/bs-button}}
+  {{/modal.footer}}
+{{/bs-modal}}
+{{#bs-button onClick=(action (mut modal3) true) class="btn1"}}Add Game{{/bs-button}}

@@ -1,0 +1,1 @@
+{"name":"review-site","description":"Small description for review-site goes here","main":"","authors":["charliekaks <kaksunchained@gmail.com>"],"license":"MIT","homepage":"","ignore":["**/.*","node_modules","bower_components","test","tests"],"dependencies":{}}

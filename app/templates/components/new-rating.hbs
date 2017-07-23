@@ -1,16 +1,13 @@
-{{#if addNewReview}}
+<!-- {{#if addNewReview}}
 <form>
   <div class="form-group">
-    <label for="comment">Comment</label>
-    {{textarea name="name" rows="8" cols="80" value=comment id="comment" class="form-control"}}
+    {{textarea name="name" rows="8" cols="80" value=comment id="comment" class="form-control frm" placeholder="write comment here"}}
   </div>
   <div class="form-group">
-    <label for="star">Star Rating</label>
-    {{input type="number" class="form-control"  placeholder="Rate 1-5" value=star id ="star" class="form-control"}}
+    {{input type="number" class="form-control"  placeholder="Rate 1-5" value=star id ="star" class="form-control frm"}}
   </div>
   <div class="form-group">
-    <label for="reviewer">Reviewer</label>
-    {{input type="text" class="form-control"  placeholder="your name" value=reviewer id ="reviewer" class="form-control"}}
+    {{input type="text" class="form-control frm"  placeholder="your name" value=reviewer id ="reviewer" class="form-control frm"}}
   </div>
   <button type="button" class="btn btn-default" {{action "saveRating"}}>Add Rating</button>
 </form>
@@ -18,4 +15,29 @@
 <button type="button" class="btn btn-default" {{action "showReviewForm"}}>
   Review Game
 </button>
-{{/if}}
+{{/if}} -->
+{{#bs-modal open=modal3 onHidden=(action (mut modal3) false) as |modal|}}
+  {{#modal.header}}
+    <h4 class="modal-title">
+      Rate A Game
+    </h4>
+  {{/modal.header}}
+  {{#modal.body}}
+  <form>
+    <div class="form-group">
+      {{textarea name="name" rows="8" cols="80" value=comment id="comment" class="form-control frm" placeholder="write comment here"}}
+    </div>
+    <div class="form-group">
+      {{input type="number" class="form-control"  placeholder="Rate 1-5" value=star id ="star" class="form-control frm"}}
+    </div>
+    <div class="form-group">
+      {{input type="text" class="form-control frm"  placeholder="your name" value=reviewer id ="reviewer" class="form-control frm"}}
+    </div>
+  </form>
+  {{/modal.body}}
+  {{#modal.footer}}
+    {{#bs-button type="success" onClick=(action "saveRating" action modal.close)}}Rate{{/bs-button}}
+    {{#bs-button onClick=(action modal.close)}}Close{{/bs-button}}
+  {{/modal.footer}}
+{{/bs-modal}}
+{{#bs-button onClick=(action (mut modal3) true) class="btn1"}}Rate A Game{{/bs-button}}
