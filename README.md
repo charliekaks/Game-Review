@@ -1,7 +1,6 @@
 # review-site
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+## The Review site is a web app that allows users to rate their favorite games and leave comments and rate them one to five.
 
 ## Prerequisites
 
@@ -10,22 +9,22 @@ You will need the following things properly installed on your computer.
 * [Git](https://git-scm.com/)
 * [Node.js](https://nodejs.org/) (with NPM)
 * [Ember CLI](https://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/charliekaks/Game-Review` this repository
 * `cd review-site`
 * `npm install`
 
 ## Running / Development
 
 * `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+* Visit your app at https://enigmatic-ravine-70393.herokuapp.com/game/0.
 
 ### Code Generators
 
-Make use of the many generators for code, try `ember help generate` for more details
+Make use of the many generators for code, try `ember help generate` and developer Charles Kakai
 
 ### Running Tests
 
@@ -39,7 +38,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+the app is deployed to Heroku app
 
 ## Further Reading / Useful Links
 
