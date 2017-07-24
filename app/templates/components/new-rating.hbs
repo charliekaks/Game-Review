@@ -1,21 +1,3 @@
-<!-- {{#if addNewReview}}
-<form>
-  <div class="form-group">
-    {{textarea name="name" rows="8" cols="80" value=comment id="comment" class="form-control frm" placeholder="write comment here"}}
-  </div>
-  <div class="form-group">
-    {{input type="number" class="form-control"  placeholder="Rate 1-5" value=star id ="star" class="form-control frm"}}
-  </div>
-  <div class="form-group">
-    {{input type="text" class="form-control frm"  placeholder="your name" value=reviewer id ="reviewer" class="form-control frm"}}
-  </div>
-  <button type="button" class="btn btn-default" {{action "saveRating"}}>Add Rating</button>
-</form>
-{{else}}
-<button type="button" class="btn btn-default" {{action "showReviewForm"}}>
-  Review Game
-</button>
-{{/if}} -->
 {{#bs-modal open=modal3 onHidden=(action (mut modal3) false) as |modal|}}
   {{#modal.header}}
     <h4 class="modal-title">

@@ -9,6 +9,9 @@
       <div class="col-md-6">
         <br><br><br>
         {{game.description}}
+        <button type="button" class="btn btn-default" {{action "addToCart"}}>
+            favorite Game
+        </button>
         {{#link-to "game" game.id}}Go to Reviews{{/link-to}}
       </div>
     </div>
